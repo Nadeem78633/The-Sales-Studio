@@ -1,6 +1,6 @@
 # The Sales Studio
 
-The Sales Studio is a full-stack application designed to manage sales data efficiently. It includes a backend server built with Node.js and Express, and a frontend client built with a modern JavaScript framework (e.g., React). The application uses MongoDB as its database, managed via Mongoose.
+The Sales Studio is a full-stack application designed to manage sales data efficiently. It includes a backend server built with Node.js and Express, and a frontend client built with a modern JavaScript framework React js. The application uses MongoDB as its database, managed via Mongoose.
 
 ## Features
 
@@ -20,19 +20,24 @@ To get started with The Sales Studio, follow these steps:
    cd the-sales-studio
    ```
 
-2. **Install dependencies**:
+2. **Install dependencies for backend **:
    ```bash
    npm install
    ```
+2. **Install dependencies for frontend **:
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-3. **Set up environment variables**:
+4. **Set up environment variables**:
    Create a `.env` file in the root directory and add the necessary environment variables. For example:
    ```env
    PORT=5000
    MONGO_URI=mongodb://localhost:27017/the-sales-studio
    ```
 
-4. **Seed the database** (optional):
+5. **Seed the database** (optional):
    If you want to populate the database with initial data, run:
    ```bash
    npm run data:import
@@ -64,22 +69,16 @@ To build the frontend and install all dependencies, run:
 npm run build
 ```
 
-### Generating Table of Contents
-
-To generate or update the table of contents in the `README.md` file, run:
-```bash
-npm run generate-toc
-```
 
 ## Scripts
 
 - **`start`**: Starts the backend server.
 - **`server`**: Starts the backend server with nodemon for hot-reloading.
 - **`client`**: Starts the frontend client.
-- **`dev`**: Runs both the backend and frontend concurrently.
+- **`dev`**: Runs both the backend and frontend with concurrently.
 - **`data:import`**: Imports data into the database.
 - **`build`**: Installs dependencies and builds the frontend.
-- **`generate-toc`**: Generates or updates the table of contents in the `README.md` file.
+
 
 ## Dependencies
 
@@ -94,31 +93,3 @@ npm run generate-toc
 
 - **nodemon**: Utility that automatically restarts the node application when file changes are detected.
 
-## Contributing
-
-Contributions are welcome! Please follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeatureName`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeatureName`).
-5. Open a pull request.
-
-## License
-
-This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for more details.
-
-## Acknowledgments
-
-- Thanks to all the open-source projects and libraries that made this project possible.
-
-## Contact
-
-For any questions or suggestions, please feel free to reach out:
-
-- **Email**: your-email@example.com
-- **GitHub**: [your-username](https://github.com/your-username)
-
----
-
-**Happy Coding!** 🚀
