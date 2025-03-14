@@ -1,0 +1,116 @@
+body {
+  background: #0f68d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.coupon-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.coupon-logo {
+  height: 40px;
+  width: 40px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.claim-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  transition: background 0.3s ease;
+}
+
+.claim-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.claim-button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.coupon-display {
+  margin-top: 1.5rem;
+
+  background: #f8f9fa;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.coupon-display h2 {
+  font-size: 1.25rem;
+  color: #28a745;
+  margin-top: 10px;
+}
+
+.message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #dc3545;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 600px) {
+  .coupon-card {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .claim-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .coupon-display h2 {
+    font-size: 1rem;
+  }
+
+  .coupon-logo {
+    height: 30px;
+    width: 30px;
+  }
+}
